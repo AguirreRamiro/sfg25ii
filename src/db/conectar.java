@@ -22,17 +22,17 @@ public class conectar {
        return cnn;
    }
    
-   public static Connection getConexionMySQL57(){
-       Connection cn = null;
-       try {
-           //cargar nuestro driver
-           Class.forName("com.mysql.jdbc.Driver");
-           cn = DriverManager.getConnection("jdbc:mysql://localhost/dbsfg21iia?autoReconnect=true&useSSL=false","root","");
-           System.out.println("conexion establecida");
-       } catch (ClassNotFoundException | SQLException e) {
-           System.out.println("Error de conexion "+e);
-           JOptionPane.showMessageDialog(null, "Error de conexion "+e);
-       }
-       return cn;
-   }
+//   public static Connection getConexionMySQL57(){
+//       Connection cn = null;
+//       try {
+//           //cargar nuestro driver
+//           Class.forName("com.mysql.jdbc.Driver");
+//           cn = DriverManager.getConnection("jdbc:mysql://localhost/dbsfg21iia?autoReconnect=true&useSSL=false","root","");
+//           System.out.println("conexion establecida");
+//       } catch (ClassNotFoundException | SQLException e) {
+//           System.out.println("Error de conexion "+e);
+//           JOptionPane.showMessageDialog(null, "Error de conexion "+e);
+//       }
+//       return cn;
+//   }
 }
